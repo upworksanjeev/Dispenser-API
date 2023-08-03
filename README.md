@@ -83,7 +83,7 @@ Before you begin, make sure you have the following tools installed:
 
 3. Create Dispensers
 
-	```bash 
+	```console
 	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers' \
 	--header 'Accept: application/json' \
 	--header 'Authorization: Bearer {token from API 1}'
@@ -96,7 +96,7 @@ Before you begin, make sure you have the following tools installed:
 
 4. Open a Dispenser
 
-	```bash 
+	```console 
 	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers/open/4' \
 	--header 'Accept: application/json'
 	```
