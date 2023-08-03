@@ -18,8 +18,7 @@ Before you begin, make sure you have the following tools installed:
 
    ```bash
    git clone https://github.com/upworksanjeev/Dispenser-API.git
-   cd Dispenser-API
-   
+   cd Dispenser-API```
 
  2. Install dependencies:
 
