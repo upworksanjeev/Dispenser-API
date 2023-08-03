@@ -15,33 +15,39 @@ Before you begin, make sure you have the following tools installed:
 
 ## Installation
 
- ### Clone the repository:
+#### Clone the repository:
 
-   ```bash
-   git clone https://github.com/upworksanjeev/Dispenser-API.git
-   cd Dispenser-API```
+```bash
+git clone https://github.com/upworksanjeev/Dispenser-API.git
+cd Dispenser-API
+```
 
- ### Install dependencies:
 
-   ```bash
-   composer install```
+#### Install dependencies:
+
+```bash
+composer install
+```
     
- ### Create a copy of the .env.example file and name it .env:
+#### Create a copy of the .env.example file and name it .env:
 
-    ```bash
-    cp .env.example .env ```
+```bash
+cp .env.example .env 
+```
 
- ### Generate an application key:
+#### Generate an application key:
 
-    ```bash
-    php artisan key:generate```
+```bash
+php artisan key:generate
+```
 
- ### Configure your .env file with your database and other settings.
+#### Configure your .env file with your database and other settings.
 
- ### Run migrations and seed the database:
+#### Run migrations and seed the database:
     
-    ```bash
-    php artisan migrate --seed```
+```bash
+php artisan migrate --seed
+```
 
 
 
