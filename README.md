@@ -72,7 +72,7 @@ Before you begin, make sure you have the following tools installed:
 
 2. Logout API
 
-	```bash 
+	```console
 	curl --location --request POST 'http://127.0.0.1:8000/api/logout' \
 	--header 'Accept: application/json' \
 	--header 'Authorization: Bearer {token from API 1}' ```
