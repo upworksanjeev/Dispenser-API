@@ -12,6 +12,44 @@ Before you begin, make sure you have the following tools installed:
 - [PHP](https://www.php.net/manual/en/install.php) (>= 7.3)
 - [Mysql or sqlserver Database](https://www.mysql.com/)
 
+#### Using multiples values
+
+ 
+
+You may use multiples values separated by comma:
+
+ 
+
+```javascript
+var cron = require('node-cron');
+
+ 
+
+cron.schedule('1,2,4,5 * * * *', () => {
+  console.log('running every minute 1, 2, 4 and 5');
+});
+```
+
+ 
+
+#### Using ranges
+
+ 
+
+You may also define a range of values:
+
+ 
+
+```javascript
+var cron = require('node-cron');
+
+ 
+
+cron.schedule('1-5 * * * *', () => {
+  console.log('running every minute to 1 from 5');
+});
+```
+
 ## Installation
 
  1. Clone the repository:
