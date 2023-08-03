@@ -12,70 +12,33 @@ Before you begin, make sure you have the following tools installed:
 - [PHP](https://www.php.net/manual/en/install.php) (>= 7.3)
 - [Mysql or sqlserver Database](https://www.mysql.com/)
 
-#### Using multiples values
-
- 
-
-You may use multiples values separated by comma:
-
- 
-
-```javascript
-var cron = require('node-cron');
-
- 
-
-cron.schedule('1,2,4,5 * * * *', () => {
-  console.log('running every minute 1, 2, 4 and 5');
-});
-```
-
- 
-
-#### Using ranges
-
- 
-
-You may also define a range of values:
-
- 
-
-```javascript
-var cron = require('node-cron');
-
- 
-
-cron.schedule('1-5 * * * *', () => {
-  console.log('running every minute to 1 from 5');
-});
-```
 
 ## Installation
 
- 1. Clone the repository:
+ ### Clone the repository:
 
    ```bash
    git clone https://github.com/upworksanjeev/Dispenser-API.git
    cd Dispenser-API```
 
- 2. Install dependencies:
+ ### Install dependencies:
 
    ```bash
    composer install```
     
- 3. Create a copy of the .env.example file and name it .env:
+ ### Create a copy of the .env.example file and name it .env:
 
     ```bash
     cp .env.example .env ```
 
- 4. Generate an application key:
+ ### Generate an application key:
 
     ```bash
     php artisan key:generate```
 
- 5. Configure your .env file with your database and other settings.
+ ### Configure your .env file with your database and other settings.
 
- 6. Run migrations and seed the database:
+ ### Run migrations and seed the database:
     
     ```bash
     php artisan migrate --seed```
