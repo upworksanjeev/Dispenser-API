@@ -63,62 +63,62 @@ php artisan migrate --seed
 
 ## List Of API and usage 
 
-1. Login API
+#### Login API
 
-	```bash 
-	curl --location 'http://127.0.0.1:8000/api/login' \
-	--header 'Accept: application/json' \
-	--form 'email="admin@admin.com"' \
-	--form 'password="password"'
-	```
+```bash 
+curl --location 'http://127.0.0.1:8000/api/login' \
+--header 'Accept: application/json' \
+--form 'email="admin@admin.com"' \
+--form 'password="password"'
+```
 
 - location: Follow redirects if the server responds with a redirect.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect JSON response.
 - form 'email="admin@admin.com"': Specify the email parameter for the login request.
 - form 'password="password"': Specify the password parameter for the login request.
 
-2. Logout API
+#### Logout API
 
-	```console
-	curl --location --request POST 'http://127.0.0.1:8000/api/logout' \
-	--header 'Accept: application/json' \
-	--header 'Authorization: Bearer {token from API 1}' 
-	```
+```console
+curl --location --request POST 'http://127.0.0.1:8000/api/logout' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {token from API 1}' 
+```
 
 - request POST: Set the HTTP method to POST.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect a JSON response.
 - header 'Authorization: Bearer eyJ0eXAi...': Include the Authorization header with a JWT token. Replace eyJ0eXAi... with your actual JWT token.
 
-3. Create Dispensers
+#### Create Dispensers
 
-	```console
-	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers' \
-	--header 'Accept: application/json' \
-	--header 'Authorization: Bearer {token from API 1}'
-	--form 'flow_volume="{value}"'
-	```
+```console
+curl --location --request POST 'http://127.0.0.1:8000/api/dispensers' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {token from API 1}'
+--form 'flow_volume="{value}"'
+```
 
 - request POST: Set the HTTP method to POST.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect a JSON response.
 - header 'Authorization: Bearer {token}': Include the Authorization header with a JWT token. Replace {token} with your actual JWT token.
 - form 'flow_volume="0.3"': Send the flow_volume parameter as form data with the value
 
-4. Open a Dispenser
+#### Open a Dispenser
 
-	```console 
-	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers/open/4' \
-	--header 'Accept: application/json'
-	```
+```console 
+curl --location --request POST 'http://127.0.0.1:8000/api/dispensers/open/4' \
+--header 'Accept: application/json'
+```
 
 - request POST: Set the HTTP method to POST.
 - location: Follow redirects if the server responds with a redirect.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect a JSON response.
 
-4. Close a Dispenser
+#### Close a Dispenser
 
-	```bash 
-	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers/close/6aea4cd3-8a9f-4e9e-9c99-812bf69cf96e'
-	```
+```bash 
+curl --location --request POST 'http://127.0.0.1:8000/api/dispensers/close/6aea4cd3-8a9f-4e9e-9c99-812bf69cf96e'
+```
 
 - request POST: Set the HTTP method to POST.
 - location: Follow redirects if the server responds with a redirect.
