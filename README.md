@@ -53,13 +53,14 @@ php artisan migrate --seed
 
 ## Usage 
 
-  To start the development server, run:
+To start the development server, run:
 
-  ```bash 
-    php artisan serve```
+```bash 
+php artisan serve
+```
 
 
-  You can now access your Laravel project at http://localhost:8000.
+You can now access your Laravel project at http://localhost:8000.
 
 ## List Of API and usage 
 
