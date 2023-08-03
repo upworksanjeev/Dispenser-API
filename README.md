@@ -75,7 +75,8 @@ Before you begin, make sure you have the following tools installed:
 	```console
 	curl --location --request POST 'http://127.0.0.1:8000/api/logout' \
 	--header 'Accept: application/json' \
-	--header 'Authorization: Bearer {token from API 1}' ```
+	--header 'Authorization: Bearer {token from API 1}' 
+	```
 
 - request POST: Set the HTTP method to POST.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect a JSON response.
@@ -87,7 +88,8 @@ Before you begin, make sure you have the following tools installed:
 	curl --location --request POST 'http://127.0.0.1:8000/api/dispensers' \
 	--header 'Accept: application/json' \
 	--header 'Authorization: Bearer {token from API 1}'
-	--form 'flow_volume="{value}"'```
+	--form 'flow_volume="{value}"'
+	```
 
 - request POST: Set the HTTP method to POST.
 - header 'Accept: application/json': Set the Accept header to indicate that you expect a JSON response.
